@@ -1,5 +1,4 @@
-CTP Web page design (CHI)
--------------------------
+# CTP Web page design (CHI)
 
 ## index_chi.html
 
