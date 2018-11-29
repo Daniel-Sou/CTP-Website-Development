@@ -11,6 +11,9 @@ English version
 ## Remark
 For Rita references
 
+HTML Table Generator
+https://www.tablesgenerator.com/html_tables
+
 The table background color:
 
 Study - background-color:#66cccc
