@@ -7,7 +7,7 @@ The file which is Chinese version
 To-Do List:
 
 - [x] Check list
-- [ ] Check list 2
+- [x] Check list 2
 
 ## index_eng.html
 
