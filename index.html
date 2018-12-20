@@ -1,1057 +1,193 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <body>
-
+<!doctype html>
+<html lang="en">
 <head>
-  <style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-.tg-career  {border-collapse:collapse;border-spacing:0;}
-.tg-career td{
-	width:10%; 
-	font-family:Arial, sans-serif;
-	font-size:14px;
-	padding:12px 18px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg-career th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:12px 18px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg-career .tg-7zvj{font-weight:bold;background-color:#ffcc00;color:#333333;text-align:left;vertical-align:top}
-.tg-career .tg-0lax{text-align:left;vertical-align:top}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
 
-.tg-study  {border-collapse:collapse;border-spacing:0;}
-.tg-study td{width:10%;font-family:Arial, sans-serif;font-size:14px;padding:12px 18px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg-study th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:12px 18px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg-study .tg-7sde{font-weight:bold;background-color:#66cccc;border-color:inherit;text-align:left;vertical-align:top}
-.tg-study .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-  </style>
-  
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--This is Datatables-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
 
-<title>澳大校友諮詢網絡</title>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
 
-<?php
+    <title>Sorting Table Testing</title>
+</head>
 
-	$lang='cn';
+<body>
+<h1 align="center">Sorting Table testing</h1>
+<br>
 
-	$olang='en';
-
-	$father="scs4";
-
-	$cur_id="scs4418";
-
-	include('../../../../../scs_header.php');
-
-?>
-
-<div id="content" class="container">
-
-    	<div class="navigation">
-
-			<?php genLocation($lang,$cur_id);?>
-
-        </div>
-
-        <div class="clear">
-
-        	<div class="left pagemenu">
-
-            	<?php genSCSSubMenu($lang,$cur_id);?>
-
-            </div><!--left-->
-
-            <div class="left context">
-                          	
-              <p><img src="https://www.umac.mo/sao/scs/cdc/students/fss/UM%20Alumni%20network%20banner.jpg" alt="Banner" width="553" height="169" /></p>
-              
-                <h2>
-
-                  <label>澳大校友諮詢網絡</label>
-
-                </h2>
-
-                <p>澳大校友諮詢網絡 </p>
-
-                <p>透過「澳大校友諮詢網絡」，學生可以跟校友取得聯繫，並從他們的升學及工作經驗中學習。在熱心的校友幫助下，學生能從以下的活動中，得到更多外地升學及就業資訊： </p>
-
-                <ul>
-
-                  <li>校友經驗分享會 </li>
-
-                  <li>與校友茶聚 </li>
-
-                  <li>學長在線 </li>
-
-                </ul>
-
-                <p>-----------------------------------------------------------------------------------------------------<br />
-
-                  學長在線 </p>
-
-                <p>為了讓學生得到第一手外地升學及就業資訊，部分學長自願加入線上指導員行列，透過電郵方式為學生解答疑問，例如:                </p>
-
-                <table border="1" cellspacing="0" cellpadding="0">
-
-                  <tr>
-
-                    <td width="279" valign="top" bgcolor="#CCCCCC"><p>升學方面：</p></td>
-
-                    <td width="279" valign="top" bgcolor="#CCCCCC"><p>就業方面：</p></td>
-
-                  </tr>
-
-                  <tr>
-
-                    <td width="279" valign="top" bgcolor="#66CCCC"><ul>
-
-                      <li>研究生院及專業的選擇</li>
-
-                      <li>升學準備</li>
-
-                      <li>支付學費</li>
-
-                      <li>校園生活及國際生支援服務</li>
-
-                    </ul></td>
-
-                    <td width="279" valign="top" bgcolor="#FFCC00"><ul>
-
-                      <li>畢業後的就業路向</li>
-
-                      <li>職場環境和市場動態</li>
-
-                      <li>生涯規劃和事業發展的建議</li>
-
-                      <li>在外地工作的注意事項</li>
-
-                    </ul></td>
-
-                  </tr>
-
-                </table>
-
-                <p>加入成為線上指導員的學長包括：</p>
-
-<!--This is the beginning of Further Study information table Chinese version-->
-
-<table class="tg-study" width="95%" id="myTable">
-  <tr>
-    <th class="tg-7sde" onclick="sortTable(0)">升學地區<br>(按英文字母順序)</th>
-    <th class="tg-7sde" onclick="sortTable(1)">學長編號</th>
-    <th class="tg-7sde" onclick="sortTable(2)">大學名稱</th>
-    <th class="tg-7sde" onclick="sortTable(3)">學位</th>
-    <th class="tg-7sde" onclick="sortTable(4)">主修專業</th>
-    <th class="tg-7sde" onclick="sortTable(5)">升學狀況</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">澳洲</td>
-    <td class="tg-0pky">AU01</td>
-    <td class="tg-0pky">墨爾本大學</td>
-    <td class="tg-0pky">博士學位</td>
-    <td class="tg-0pky">電腦及資訊系統</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">澳洲</td>
-    <td class="tg-0pky">AU02</td>
-    <td class="tg-0pky">澳洲國立大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">國際關係</td>
-    <td class="tg-0pky">正在就讀</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">澳洲</td>
-    <td class="tg-0pky">AU03</td>
-    <td class="tg-0pky">墨爾本大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">資訊系統</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">澳洲</td>
-    <td class="tg-0pky">AU04</td>
-    <td class="tg-0pky">蒙納士大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">財務學</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">澳洲</td>
-    <td class="tg-0pky">AU05</td>
-    <td class="tg-0pky">墨爾本大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">言語病理學</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">澳洲</td>
-    <td class="tg-0pky">AU06</td>
-    <td class="tg-0pky">悉尼大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">商業（財務及銀行學）</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">加拿大</td>
-    <td class="tg-0pky">CA01</td>
-    <td class="tg-0pky">麥吉爾大學</td>
-    <td class="tg-0pky">博士學位</td>
-    <td class="tg-0pky">電腦科學</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">德國</td>
-    <td class="tg-0pky">DE01</td>
-    <td class="tg-0pky">漢堡大學</td>
-    <td class="tg-0pky">博士學位</td>
-    <td class="tg-0pky">法律經濟學</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">香港</td>
-    <td class="tg-0pky">HK01</td>
-    <td class="tg-0pky">香港城市大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">整合營銷傳播</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">香港</td>
-    <td class="tg-0pky">HK02</td>
-    <td class="tg-0pky">香港大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">建築文物保護</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">香港</td>
-    <td class="tg-0pky">HK03</td>
-    <td class="tg-0pky">香港大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">統計學</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">香港</td>
-    <td class="tg-0pky">HK04</td>
-    <td class="tg-0pky">香港中文大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">財務學</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">香港</td>
-    <td class="tg-0pky">HK05</td>
-    <td class="tg-0pky">嶺南大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">人力資源管理</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">香港</td>
-    <td class="tg-0pky">HK06</td>
-    <td class="tg-0pky">香港科技大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">人文學</td>
-    <td class="tg-0pky">正在就讀</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">香港</td>
-    <td class="tg-0pky">HK07</td>
-    <td class="tg-0pky">香港中文大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">英文文學</td>
-    <td class="tg-0pky">正在就讀</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">香港</td>
-    <td class="tg-0pky">HK08</td>
-    <td class="tg-0pky">香港中文大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">社會工作</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">韓國</td>
-    <td class="tg-0pky">KR01</td>
-    <td class="tg-0pky">高麗大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">中日文化比較研究</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">中國大陸</td>
-    <td class="tg-0pky">CN01</td>
-    <td class="tg-0pky">中國人民大學</td>
-    <td class="tg-0pky">博士學位</td>
-    <td class="tg-0pky">財政學</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">新加坡</td>
-    <td class="tg-0pky">SG01</td>
-    <td class="tg-0pky">新加坡國立大學</td>
-    <td class="tg-0pky">博士學位</td>
-    <td class="tg-0pky">公共政策</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">新加坡</td>
-    <td class="tg-0pky">SG02</td>
-    <td class="tg-0pky">南洋理工大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">知識管理學</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">新加坡</td>
-    <td class="tg-0pky">SG03</td>
-    <td class="tg-0pky">南洋理工大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">金融工程</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">新加坡</td>
-    <td class="tg-0pky">SG04</td>
-    <td class="tg-0pky">南洋理工大學</td>
-    <td class="tg-0pky">博士學位</td>
-    <td class="tg-0pky">文學</td>
-    <td class="tg-0pky">正在就讀</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">新加坡</td>
-    <td class="tg-0pky">SG05</td>
-    <td class="tg-0pky">南洋理工大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">財務學</td>
-    <td class="tg-0pky">正在就讀</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">西班牙</td>
-    <td class="tg-0pky">ES01</td>
-    <td class="tg-0pky">IE商學院</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">國際企業管理</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">英國</td>
-    <td class="tg-0pky">UK01</td>
-    <td class="tg-0pky">劍橋大學</td>
-    <td class="tg-0pky">博士學位</td>
-    <td class="tg-0pky">教育</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">英國</td>
-    <td class="tg-0pky">UK02</td>
-    <td class="tg-0pky">格拉斯哥大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">財務預測及投資</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">英國</td>
-    <td class="tg-0pky">UK03</td>
-    <td class="tg-0pky">倫敦帝國學院</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">金融與會計</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">英國</td>
-    <td class="tg-0pky">UK04</td>
-    <td class="tg-0pky">曼徹斯特大學</td>
-    <td class="tg-0pky">博士學位</td>
-    <td class="tg-0pky">教育</td>
-    <td class="tg-0pky">正在就讀</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">英國</td>
-    <td class="tg-0pky">UK05</td>
-    <td class="tg-0pky">倫敦大學金匠學院</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">國際傳媒學</td>
-    <td class="tg-0pky">正在就讀</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US01</td>
-    <td class="tg-0pky">德州農工大學</td>
-    <td class="tg-0pky">博士學位</td>
-    <td class="tg-0pky">教育心理學 (研究方法、測驗與統計組)</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US02</td>
-    <td class="tg-0pky">馬里蘭大學學院市分校</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">工商管理 - 供應鏈管理</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US03</td>
-    <td class="tg-0pky">佛羅里達大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">電子藝術和科學</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US04</td>
-    <td class="tg-0pky">杜克大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">東亞研究</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US05</td>
-    <td class="tg-0pky">福坦莫大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">會計學</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US06</td>
-    <td class="tg-0pky">丹佛大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">國際企業管理碩士</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US07</td>
-    <td class="tg-0pky">西北大學</td>
-    <td class="tg-0pky">碩博 雙學位</td>
-    <td class="tg-0pky">法學及工商管理</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US08</td>
-    <td class="tg-0pky">德克薩斯州大學達拉斯分校</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">財政學</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US09</td>
-    <td class="tg-0pky">聖路易斯華盛頓大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">會計學</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US10</td>
-    <td class="tg-0pky">密歇根大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">會計學</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US11</td>
-    <td class="tg-0pky">福坦莫大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">商業分析</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US12</td>
-    <td class="tg-0pky">普渡大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">健康傳播學</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US13</td>
-    <td class="tg-0pky">華盛頓大學</td>
-    <td class="tg-0pky">博士學位</td>
-    <td class="tg-0pky">區域研究</td>
-    <td class="tg-0pky">正在就讀</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US14</td>
-    <td class="tg-0pky">波士頓大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">心理健康諮商</td>
-    <td class="tg-0pky">正在就讀</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US15</td>
-    <td class="tg-0pky">伊利諾大學厄巴納-香檳分校</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">金融工程</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US16</td>
-    <td class="tg-0pky">康乃狄克大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">金融風險管理</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US17</td>
-    <td class="tg-0pky">加州大學戴維斯分校</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">傳播學</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US18</td>
-    <td class="tg-0pky">羅徹斯特大學</td>
-    <td class="tg-0pky">博士學位</td>
-    <td class="tg-0pky">機械工程</td>
-    <td class="tg-0pky">正在就讀</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US19</td>
-    <td class="tg-0pky">哥倫比亞大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">TESOL（對外英語教學）</td>
-    <td class="tg-0pky">已畢業</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US20</td>
-    <td class="tg-0pky">南加州大學</td>
-    <td class="tg-0pky">博士學位</td>
-    <td class="tg-0pky">傳播學</td>
-    <td class="tg-0pky">正在就讀</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US21</td>
-    <td class="tg-0pky">斯泰森大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">工商管理 (MBA)</td>
-    <td class="tg-0pky">正在就讀</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US22</td>
-    <td class="tg-0pky">康奈爾大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">公共行政</td>
-    <td class="tg-0pky">正在就讀</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">美國</td>
-    <td class="tg-0pky">US23</td>
-    <td class="tg-0pky">密歇根大學</td>
-    <td class="tg-0pky">碩士學位</td>
-    <td class="tg-0pky">信息學</td>
-    <td class="tg-0pky">正在就讀</td>
-  </tr>
+<table id="Table1" class="table table-hover">
+    <caption>This is hovered table</caption>
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+    </tr>
+    </tbody>
 </table>
 
-<!--This is the end of Further Study information Table-->
-<p></p>
- 
-<!--This is the beginning of Employment information table-->  
 
-<table class="tg-career" width="95%" id="myTable2">
-  <tr>
-    <th class="tg-7zvj" onclick="sortTable2(0)">工作地點<br> (按英文字母順序)</th>
-    <th class="tg-7zvj" onclick="sortTable2(1)">學長編號</th>
-    <th class="tg-7zvj" onclick="sortTable2(2)">任職機構名稱</th>
-    <th class="tg-7zvj" onclick="sortTable2(3)">所屬行業</th>
-    <th class="tg-7zvj" onclick="sortTable2(4)">工作性質</th>
-    <th class="tg-7zvj" onclick="sortTable2(5)">職位</th>
-  </tr>
-  <tr>
-    <td class="tg-0lax">澳洲墨爾本</td>
-    <td class="tg-0lax">AU01-ME</td>
-    <td class="tg-0lax">City Holdings Pty Ltd</td>
-    <td class="tg-0lax">資訊科技／設施管理</td>
-    <td class="tg-0lax">數據／商業分析</td>
-    <td class="tg-0lax">商業智慧分析師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">加拿大卡加立</td>
-    <td class="tg-0lax">CA01-CA</td>
-    <td class="tg-0lax">美世</td>
-    <td class="tg-0lax">人力資源管理諮詢</td>
-    <td class="tg-0lax">保險服務</td>
-    <td class="tg-0lax">分析師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國北京</td>
-    <td class="tg-0lax">CN01-BJ</td>
-    <td class="tg-0lax">中國人民銀行</td>
-    <td class="tg-0lax">銀行及金融業</td>
-    <td class="tg-0lax">印鈔造幣</td>
-    <td class="tg-0lax">/</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國北京</td>
-    <td class="tg-0lax">CN10-BJ</td>
-    <td class="tg-0lax">普華永道</td>
-    <td class="tg-0lax">會計及核數</td>
-    <td class="tg-0lax">市場推廣及銷售</td>
-    <td class="tg-0lax">高級市場主任</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國北京</td>
-    <td class="tg-0lax">CN11-BJ</td>
-    <td class="tg-0lax">微軟中國</td>
-    <td class="tg-0lax">資訊科技</td>
-    <td class="tg-0lax">市場推廣及銷售</td>
-    <td class="tg-0lax">產品推廣經理</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國北京</td>
-    <td class="tg-0lax">CN12-BJ</td>
-    <td class="tg-0lax">中國銀河證券股份有限公司</td>
-    <td class="tg-0lax">金融業</td>
-    <td class="tg-0lax">金融投資</td>
-    <td class="tg-0lax">高級經理</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國北京</td>
-    <td class="tg-0lax">CN16-BJ</td>
-    <td class="tg-0lax">英國大使館文化教育處</td>
-    <td class="tg-0lax">教育</td>
-    <td class="tg-0lax">行政</td>
-    <td class="tg-0lax">考試專員</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國北京</td>
-    <td class="tg-0lax">CN19-BJ</td>
-    <td class="tg-0lax">北京市西城區人民檢察院</td>
-    <td class="tg-0lax">政府部門</td>
-    <td class="tg-0lax">法律諮詢服務</td>
-    <td class="tg-0lax">檢察官、處長</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國北京</td>
-    <td class="tg-0lax">CN29-BJ</td>
-    <td class="tg-0lax">中華女子學院</td>
-    <td class="tg-0lax">教育</td>
-    <td class="tg-0lax">敎學及培訓</td>
-    <td class="tg-0lax">學前教育講師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國廣州</td>
-    <td class="tg-0lax">CN18-GZ</td>
-    <td class="tg-0lax">滙豐環球客戶服務（廣東）有限公司</td>
-    <td class="tg-0lax">銀行及金融業</td>
-    <td class="tg-0lax">基金會計</td>
-    <td class="tg-0lax">管理培訓生</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國廣州</td>
-    <td class="tg-0lax">CN28-GZ</td>
-    <td class="tg-0lax">廣東外語外貿大學南國商學院</td>
-    <td class="tg-0lax">教育</td>
-    <td class="tg-0lax">敎學及培訓</td>
-    <td class="tg-0lax">葡萄牙語講師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國廣州</td>
-    <td class="tg-0lax">CN30-GZ</td>
-    <td class="tg-0lax">國際香料（中國）有限公司</td>
-    <td class="tg-0lax">研究與開發</td>
-    <td class="tg-0lax">工程</td>
-    <td class="tg-0lax">管理培訓生</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國杭州</td>
-    <td class="tg-0lax">CN02-HZ</td>
-    <td class="tg-0lax">淅江丹特衛頓熱泵有限公司</td>
-    <td class="tg-0lax">貿易／批發／零售</td>
-    <td class="tg-0lax">市場推廣及銷售</td>
-    <td class="tg-0lax">客戶經理</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國杭州</td>
-    <td class="tg-0lax">CN22-HZ</td>
-    <td class="tg-0lax">阿里巴巴集團</td>
-    <td class="tg-0lax">資訊科技</td>
-    <td class="tg-0lax">工程</td>
-    <td class="tg-0lax">高級算法工程師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國哈爾濱</td>
-    <td class="tg-0lax">CN13-HB</td>
-    <td class="tg-0lax">哈爾濱師範大學</td>
-    <td class="tg-0lax">教育</td>
-    <td class="tg-0lax">敎育培訓</td>
-    <td class="tg-0lax">葡萄牙語教師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國合肥</td>
-    <td class="tg-0lax">CN03-HF</td>
-    <td class="tg-0lax">萬達集團</td>
-    <td class="tg-0lax">商業／文化／網絡／金融</td>
-    <td class="tg-0lax">市場推廣及銷售、人力資源</td>
-    <td class="tg-0lax">管理培訓生</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國上海</td>
-    <td class="tg-0lax">CN04-SH</td>
-    <td class="tg-0lax">昆山農村商業銀行</td>
-    <td class="tg-0lax">銀行及金融業</td>
-    <td class="tg-0lax">行政</td>
-    <td class="tg-0lax">互聯網銀行副總裁</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國上海</td>
-    <td class="tg-0lax">CN05-SH</td>
-    <td class="tg-0lax">怡昌資源投資有限公司</td>
-    <td class="tg-0lax">貿易</td>
-    <td class="tg-0lax">市場推廣及銷售</td>
-    <td class="tg-0lax">董事及行政總裁</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國上海</td>
-    <td class="tg-0lax">CN06-SH</td>
-    <td class="tg-0lax">仁和智本</td>
-    <td class="tg-0lax">金融業</td>
-    <td class="tg-0lax">金融投資</td>
-    <td class="tg-0lax">高級投資經理</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國上海</td>
-    <td class="tg-0lax">CN07-SH</td>
-    <td class="tg-0lax">上海安多福教育培訓有限公司</td>
-    <td class="tg-0lax">教育</td>
-    <td class="tg-0lax">敎育培訓</td>
-    <td class="tg-0lax">托福老師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國上海</td>
-    <td class="tg-0lax">CN14-SH</td>
-    <td class="tg-0lax">上海發那科機器人有限公司</td>
-    <td class="tg-0lax">工程</td>
-    <td class="tg-0lax">工程</td>
-    <td class="tg-0lax">研發工程師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國上海</td>
-    <td class="tg-0lax">CN17-SH</td>
-    <td class="tg-0lax">上海澤生科技開發股份有限公司</td>
-    <td class="tg-0lax">醫療衛生</td>
-    <td class="tg-0lax">商務拓展</td>
-    <td class="tg-0lax">副總經理</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國上海</td>
-    <td class="tg-0lax">CN20-SH</td>
-    <td class="tg-0lax">巴斯夫（中國）有限責任公司</td>
-    <td class="tg-0lax">化工</td>
-    <td class="tg-0lax">市場推廣及銷售</td>
-    <td class="tg-0lax">銷售推廣人員</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國上海</td>
-    <td class="tg-0lax">CN24-SH</td>
-    <td class="tg-0lax">完美世界（北京）網絡技術有限公司</td>
-    <td class="tg-0lax">資訊科技</td>
-    <td class="tg-0lax">藝術 / 設計</td>
-    <td class="tg-0lax">遊戲策劃師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國上海</td>
-    <td class="tg-0lax">CN27-SH</td>
-    <td class="tg-0lax">萬達網路科技集團</td>
-    <td class="tg-0lax">銀行及金融</td>
-    <td class="tg-0lax">金融服務</td>
-    <td class="tg-0lax">合規專員</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國深圳</td>
-    <td class="tg-0lax">CN08-SZ</td>
-    <td class="tg-0lax">深圳市光明新區公共事業局</td>
-    <td class="tg-0lax">政府部門</td>
-    <td class="tg-0lax">行政</td>
-    <td class="tg-0lax">行政人員</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國深圳</td>
-    <td class="tg-0lax">CN32-SZ</td>
-    <td class="tg-0lax">華為技術有限公司</td>
-    <td class="tg-0lax">電訊服務</td>
-    <td class="tg-0lax">財務管理</td>
-    <td class="tg-0lax">財務管理</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國珠海</td>
-    <td class="tg-0lax">CN09-ZH</td>
-    <td class="tg-0lax">北京大成（珠海）律師事務所</td>
-    <td class="tg-0lax">律師樓及法律顧問</td>
-    <td class="tg-0lax">法律諮詢服務</td>
-    <td class="tg-0lax">律師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國珠海</td>
-    <td class="tg-0lax">CN15-ZH</td>
-    <td class="tg-0lax">珠海麗珠聖美醫療診斷技術有限公司</td>
-    <td class="tg-0lax">醫療衛生</td>
-    <td class="tg-0lax">科學研究工作</td>
-    <td class="tg-0lax">醫學專員</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國珠海</td>
-    <td class="tg-0lax">CN21-ZH</td>
-    <td class="tg-0lax">北京師範大學珠海分校</td>
-    <td class="tg-0lax">教育</td>
-    <td class="tg-0lax">敎學及培訓</td>
-    <td class="tg-0lax">法律與行政學院講師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國香港</td>
-    <td class="tg-0lax">HK01-HK</td>
-    <td class="tg-0lax">霍特國際商學院 – 亞洲區招生辦公室</td>
-    <td class="tg-0lax">教育</td>
-    <td class="tg-0lax">教育諮詢</td>
-    <td class="tg-0lax">招生部副主任</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國香港</td>
-    <td class="tg-0lax">HK02-HK</td>
-    <td class="tg-0lax">法國巴黎銀行</td>
-    <td class="tg-0lax">銀行及金融業</td>
-    <td class="tg-0lax">研究及會計</td>
-    <td class="tg-0lax">信用風險分析師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">中國香港</td>
-    <td class="tg-0lax">HK03-HK</td>
-    <td class="tg-0lax">瑞士諾華製藥（香港）有限公司</td>
-    <td class="tg-0lax">醫療衛生</td>
-    <td class="tg-0lax">市場推廣及銷售</td>
-    <td class="tg-0lax">高級銷售代表</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">沙特阿拉伯</td>
-    <td class="tg-0lax">SA01-SA</td>
-    <td class="tg-0lax">法赫德國王石油礦產大學</td>
-    <td class="tg-0lax">教育</td>
-    <td class="tg-0lax">敎育培訓</td>
-    <td class="tg-0lax">國際關係及地理政治學助理教授</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">新加坡</td>
-    <td class="tg-0lax">SG01-SG</td>
-    <td class="tg-0lax">新加坡國立大學</td>
-    <td class="tg-0lax">教育</td>
-    <td class="tg-0lax">科學研究工作</td>
-    <td class="tg-0lax">生物工程系博士後研究員</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">美國佛州</td>
-    <td class="tg-0lax">US05-FL</td>
-    <td class="tg-0lax">斯泰森大學</td>
-    <td class="tg-0lax">教育</td>
-    <td class="tg-0lax">敎育培訓</td>
-    <td class="tg-0lax">中文講師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">美國紐約</td>
-    <td class="tg-0lax">US02-NY</td>
-    <td class="tg-0lax">安永會計師事務</td>
-    <td class="tg-0lax">會計及核數</td>
-    <td class="tg-0lax">審計</td>
-    <td class="tg-0lax">高級審計師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">美國紐約</td>
-    <td class="tg-0lax">US04-NY</td>
-    <td class="tg-0lax">寺庫集團</td>
-    <td class="tg-0lax">奢侈品零售/ 電子商貿</td>
-    <td class="tg-0lax">市場研究/ 商業分析/ 數據挖掘</td>
-    <td class="tg-0lax">數據分析師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">美國賓州</td>
-    <td class="tg-0lax">US03-PA</td>
-    <td class="tg-0lax">阿勒格尼學院</td>
-    <td class="tg-0lax">教育</td>
-    <td class="tg-0lax">敎育培訓</td>
-    <td class="tg-0lax">中文講師</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">美國德州</td>
-    <td class="tg-0lax">US01-TX</td>
-    <td class="tg-0lax">Seneca Investments</td>
-    <td class="tg-0lax">房地產</td>
-    <td class="tg-0lax">投資／研究</td>
-    <td class="tg-0lax">金融分析師</td>
-  </tr>
+<br>
+
+<table id="Table2" class="table">
+    <caption>This is sorted table</caption>
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+    </tr>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+    </tr>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+    </tr>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+    </tr>
+    <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+    </tr>
+    </tbody>
 </table>
-              
-<!--This is the end of the Employment information Table-->
-<p></p>
 
-              <p>若想與學長聯繫，請按照以下步驟： </p>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-                <ul>
+<script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+</script>
 
-                  <li>登入電子表格系統 (<a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__umac.au1.qualtrics.com_jfe_form_SV-5F0dOnOgB1KQpsKMt&d=DwMGaQ&c=KXXihdR8fRNGFkKiMQzstu-8MbOxd1NuZkcSBymGmgo&r=YgiIm0LUnK7ygvdjU35cgNiLvPcpE9Zzzx9xRBZ6tEU&m=MIhxmUikicGZM0gsH8zqmI0l8CNxy30lRWMNokSBipQ&s=_U7ckLYwTQ194n3jEDVMLpN4FxOl5zNv4Cd5FmvIQBM&e=" target="_blank">https://umac.au1.qualtrics.com/jfe/form/SV_0dOnOgB1KQpsKMt</a>)</li>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
 
-                  <li>填寫學長在線登記表格</li>
+<script>
+    $(document).ready(function() {
+        $('#Table1').DataTable();
+    } );
 
-                  <li>我們會協助你與相應的學長聯絡</li>
+    $(document).ready(function() {
+        $('#Table2').DataTable();
+    } );
+</script>
 
-              </ul>
-
-              <p>&nbsp;</p>
-
-                <div>
-
-                  <div> </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div><!--content-->
-
-
-
-    <?php
-
-    	include('../../../../../scs_bottom.php');
-
-	?>
-
-    <?php
-
-    	include('../../../../../footer_'.$lang.'.php');
-
-	?>
-
-    </div><!--wrap-->
-
-        <script>
-      function sortTable(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("myTable");
-  switching = true;
-  //Set the sorting direction to ascending:
-  dir = "asc"; 
-  /*Make a loop that will continue until
-  no switching has been done:*/
-  while (switching) {
-    //start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /*Loop through all table rows (except the
-    first, which contains table headers):*/
-    for (i = 1; i < (rows.length - 1); i++) {
-      //start by saying there should be no switching:
-      shouldSwitch = false;
-      /*Get the two elements you want to compare,
-      one from current row and one from the next:*/
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      /*check if the two rows should switch place,
-      based on the direction, asc or desc:*/
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      /*If a switch has been marked, make the switch
-      and mark that a switch has been done:*/
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      //Each time a switch is done, increase this count by 1:
-      switchcount ++;      
-    } else {
-      /*If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again.*/
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
-
-function sortTable2(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("myTable2");
-  switching = true;
-  //Set the sorting direction to ascending:
-  dir = "asc"; 
-  /*Make a loop that will continue until
-  no switching has been done:*/
-  while (switching) {
-    //start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /*Loop through all table rows (except the
-    first, which contains table headers):*/
-    for (i = 1; i < (rows.length - 1); i++) {
-      //start by saying there should be no switching:
-      shouldSwitch = false;
-      /*Get the two elements you want to compare,
-      one from current row and one from the next:*/
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      /*check if the two rows should switch place,
-      based on the direction, asc or desc:*/
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      /*If a switch has been marked, make the switch
-      and mark that a switch has been done:*/
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      //Each time a switch is done, increase this count by 1:
-      switchcount ++;      
-    } else {
-      /*If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again.*/
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
-
-  </script>
 
 </body>
-
 </html>
