@@ -12,3 +12,7 @@ https://codepen.io/daniel-sou/full/aaYRBK
 Moreover, this website is using
 * [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 * [DataTable](https://datatables.net/)
+
+---
+## Procedure to update the table
+https://github.com/Daniel-Sou/CTP-Website-Development/wiki/Procedure-to-update-the-table
