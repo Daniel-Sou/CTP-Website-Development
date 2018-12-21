@@ -1,1043 +1,921 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+
+    <!--This is Font's Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>UM Alumni Advisory Network</title>
+
+    <!--This is CSS Setting-->
+    <style>
+        #career thead tr {
+            background-color: #ffcc00;
+        }
+
+        #study thead tr{
+            background-color: #66cccc;
+        }
+
+    </style>
+
+</head>
+
 <body>
 
-<style type="text/css">
-.tg-study  {width:90%; border-collapse:collapse;border-spacing:0;border-color:#999;}
-.tg-study td{width:10%; font-family:Arial, sans-serif;font-size:14px;padding:12px 18px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
-.tg-study th{width:10%; font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:12px 18px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#999;color:#fff;background-color:#26ADE4;}
-.tg-study .tg-wlzb{font-family:Arial, Helvetica, sans-serif !important;;background-color:#66cccc;color:#000000;text-align:left;vertical-align:top}
-.tg-study .tg-jwfa{font-family:Arial, Helvetica, sans-serif !important;;color:#000000;text-align:left;vertical-align:top}
-  
-.tg-career  {width:90%; border-collapse:collapse;border-spacing:0;border-color:#aaa;}
-.tg-career td{width:10%; font-family:Arial, sans-serif;font-size:14px;padding:12px 18px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#333;background-color:#fff;}
-.tg-career th{width:10%; font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:12px 18px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aaa;color:#fff;background-color:#f38630;}
-.tg-career .tg-4jr3{font-weight:bold;background-color:#ffcc00;color:#444444;text-align:left;vertical-align:top}
-.tg-career .tg-0lax{text-align:left;vertical-align:top}
-  
-</style>
+<p><img src="https://www.umac.mo/sao/scs/cdc/students/fss/UM%20Alumni%20network%20banner.jpg" alt="Banner" width="553" height="169" /></p>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<h1 align="center">UM Alumni Advisory Network</h1>
 
-<title>UM Alumni Advisory Network</title>
 
-<?php
+<p>&ldquo;UM Alumni Advisory Network&rdquo; is a platform  for students to interact with alumni and learn from their successful stories in  graduate study and career. With the help of our enthusiastic alumni, students  can know more about overseas graduate study and career information through the  following activities:</p>
 
-	$lang='en';
+<ul>
 
-	$olang='cn';
+    <li>Experience-Sharing Session by  Alumni</li>
 
-	$father="scs4";
+    <li>Tea with Alumni</li>
 
-	$cur_id="scs4418";
+    <li>Alumni Online</li>
+</ul>
 
-	include('../../../../../scs_header.php');
+<p>-----------------------------------------------------------------------------------------------------<br>
 
-?>
+    Alumni Online </p>
 
-<div id="content" class="container">
+<p>In order  to provide students with first-hand information on overseas graduate study and  career, some of our alumni are willing to be voluntary online advisors to  answer students&rsquo; enquiries via emails, such as: </p>
 
-    	<div class="navigation">
+<table id="brief" align="center" border="1" cellspacing="0" cellpadding="5">
 
-			<?php genLocation($lang,$cur_id);?>
+    <tr>
 
-        </div>
+        <td width="279" valign="top" bgcolor="#CCCCCC"><p>Graduate study:</p></td>
 
-        <div class="clear">
+        <td width="279" valign="top" bgcolor="#CCCCCC"><p>Career:</p></td>
 
-        	<div class="left pagemenu">
+    </tr>
 
-            	<?php genSCSSubMenu($lang,$cur_id);?>
+    <tr>
 
-            </div><!--left-->
+        <td width="279" valign="top" bgcolor="#66CCCC"><ul>
 
-            <div class="left context">
-                          	
-              <p><img src="https://www.umac.mo/sao/scs/cdc/students/fss/UM%20Alumni%20network%20banner.jpg" alt="Banner" width="553" height="169" /></p>
-              
-                <h2>
+            <li>Selection of university and major;</li>
 
-                  <label>UM Alumni Advisory Network </label>
+            <li>Preparation for graduate study; </li>
 
-                </h2>
+            <li>Financing graduate study;</li>
 
-                <p>&ldquo;UM Alumni Advisory Network&rdquo; is a platform  for students to interact with alumni and learn from their successful stories in  graduate study and career. With the help of our enthusiastic alumni, students  can know more about overseas graduate study and career information through the  following activities:</p>
+            <li>Campus life and supporting services for international students;</li>
 
-                <ul>
+        </ul>
 
-                  <li>Experience-Sharing Session by  Alumni</li>
+            <p>&nbsp;</p></td>
 
-                  <li>Tea with Alumni</li>
+        <td width="279" valign="top" bgcolor="#FFCC00"><ul>
 
-                  <li>Alumni Online</li>
+            <li>Possible career paths after graduation</li>
 
-                </ul>
+            <li>Work environment and market trend</li>
 
-                <p>-----------------------------------------------------------------------------------------------------<br />
+            <li>Advice on career planning and development</li>
 
-                  Alumni Online </p>
+            <li>Points to note about working overseas</li>
 
-                <p>In order  to provide students with first-hand information on overseas graduate study and  career, some of our alumni are willing to be voluntary online advisors to  answer students&rsquo; enquiries via emails, such as: </p>
+        </ul></td>
 
-                <table border="1" cellspacing="0" cellpadding="0">
+    </tr>
 
-                  <tr>
 
-                    <td width="279" valign="top" bgcolor="#CCCCCC"><p>Graduate study:</p></td>
-
-                    <td width="279" valign="top" bgcolor="#CCCCCC"><p>Career:</p></td>
-
-                  </tr>
-
-                  <tr>
-
-                    <td width="279" valign="top" bgcolor="#66CCCC"><ul>
-
-                      <li>Selection of university and major;</li>
-
-                      <li>Preparation for graduate study; </li>
-
-                      <li>Financing graduate study;</li>
-
-                      <li>Campus life and supporting services for international students;</li>
-
-                    </ul>
-
-                      <p>&nbsp;</p></td>
-
-                    <td width="279" valign="top" bgcolor="#FFCC00"><ul>
-
-                      <li>Possible career paths after graduation</li>
-
-                      <li>Work environment and market trend</li>
-
-                      <li>Advice on career planning and development</li>
-
-                      <li>Points to note about working overseas</li>
-
-                    </ul></td>
-
-                  </tr>
-
-                </table>
-
-                <p>Below please find the information of alumni  who have joined the Alumni Online:</p>
-
-<!--This is the beginning of Further Study information table-->
-            
-<table class="tg-study" id="myTable">
-  <tr>
-    <th class="tg-wlzb" onclick="sortTable(0)">Further Study Location <br>(By Alphabetical Order of Region)</th>
-    <th class="tg-wlzb" onclick="sortTable(1)">Alumni Number</th>
-    <th class="tg-wlzb" onclick="sortTable(2)">Name of University</th>
-    <th class="tg-wlzb" onclick="sortTable(3)">Degree Programme</th>
-    <th class="tg-wlzb" onclick="sortTable(4)">Major of Study</th>
-    <th class="tg-wlzb" onclick="sortTable(5)">Status of Graduate Study</th>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Australia</td>
-    <td class="tg-jwfa">AU01</td>
-    <td class="tg-jwfa">The University of Melbourne</td>
-    <td class="tg-jwfa">Doctoral degree</td>
-    <td class="tg-jwfa">Computing and Information Systems</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Australia</td>
-    <td class="tg-jwfa">AU02</td>
-    <td class="tg-jwfa">The Australian National University</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">International Relations</td>
-    <td class="tg-jwfa">Currently enrolled</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Australia</td>
-    <td class="tg-jwfa">AU03</td>
-    <td class="tg-jwfa">The University of Melbourne</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Information System</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Australia</td>
-    <td class="tg-jwfa">AU04</td>
-    <td class="tg-jwfa">Monash University</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Finance</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Australia</td>
-    <td class="tg-jwfa">AU05</td>
-    <td class="tg-jwfa">The University of Melbourne</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Speech Pathology</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Australia</td>
-    <td class="tg-jwfa">AU06</td>
-    <td class="tg-jwfa">The University of Sydney</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Commerce (Finance and Banking)</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Canada</td>
-    <td class="tg-jwfa">CA01</td>
-    <td class="tg-jwfa">McGill University</td>
-    <td class="tg-jwfa">Doctoral degree</td>
-    <td class="tg-jwfa">Computer Science</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Germany</td>
-    <td class="tg-jwfa">DE01</td>
-    <td class="tg-jwfa">Universität Hamburg</td>
-    <td class="tg-jwfa">Doctoral degree</td>
-    <td class="tg-jwfa">Law and Economics</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Hong Kong SAR</td>
-    <td class="tg-jwfa">HK01</td>
-    <td class="tg-jwfa">City University of Hong Kong</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Integrated Marketing Communications</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Hong Kong SAR</td>
-    <td class="tg-jwfa">HK02</td>
-    <td class="tg-jwfa">University of Hong Kong</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Architectural Conservation</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Hong Kong SAR</td>
-    <td class="tg-jwfa">HK03</td>
-    <td class="tg-jwfa">University of Hong Kong</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Statistics</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Hong Kong SAR</td>
-    <td class="tg-jwfa">HK04</td>
-    <td class="tg-jwfa">The Chinese University of Hong Kong</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Finance</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Hong Kong SAR</td>
-    <td class="tg-jwfa">HK05</td>
-    <td class="tg-jwfa">Lingnan University</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Human Resource Management</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Hong Kong SAR</td>
-    <td class="tg-jwfa">HK06</td>
-    <td class="tg-jwfa">The Hong Kong University of Science and Technology</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Humanities</td>
-    <td class="tg-jwfa">Currently enrolled</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Hong Kong SAR</td>
-    <td class="tg-jwfa">HK07</td>
-    <td class="tg-jwfa">The Chinese University of Hong Kong</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">English Literature</td>
-    <td class="tg-jwfa">Currently enrolled</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Hong Kong SAR</td>
-    <td class="tg-jwfa">HK08</td>
-    <td class="tg-jwfa">The Chinese University of Hong Kong</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Social Work</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Korea</td>
-    <td class="tg-jwfa">KR01</td>
-    <td class="tg-jwfa">Korea University</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Comparative Studies of Chinese and Japanese Culture</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Mainland China</td>
-    <td class="tg-jwfa">CN01</td>
-    <td class="tg-jwfa">Renmin (People's) University of China</td>
-    <td class="tg-jwfa">Doctoral degree</td>
-    <td class="tg-jwfa">Public Finance</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Singapore</td>
-    <td class="tg-jwfa">SG01</td>
-    <td class="tg-jwfa">National University of Singapore</td>
-    <td class="tg-jwfa">Doctoral degree</td>
-    <td class="tg-jwfa">Public Policy</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Singapore</td>
-    <td class="tg-jwfa">SG02</td>
-    <td class="tg-jwfa">Nanyang Technological University</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Knowledge Management</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Singapore</td>
-    <td class="tg-jwfa">SG03</td>
-    <td class="tg-jwfa">Nanyang Technological University</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Financial Engineering</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Singapore</td>
-    <td class="tg-jwfa">SG04</td>
-    <td class="tg-jwfa">Nanyang Technological University</td>
-    <td class="tg-jwfa">Doctoral degree</td>
-    <td class="tg-jwfa">Literature</td>
-    <td class="tg-jwfa">Currently enrolled</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Singapore</td>
-    <td class="tg-jwfa">SG05</td>
-    <td class="tg-jwfa">Nanyang Technological University</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Finance</td>
-    <td class="tg-jwfa">Currently enrolled</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">Spain</td>
-    <td class="tg-jwfa">ES01</td>
-    <td class="tg-jwfa">IE Business School</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">International MBA </td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United Kingdom</td>
-    <td class="tg-jwfa">UK01</td>
-    <td class="tg-jwfa">University of Cambridge</td>
-    <td class="tg-jwfa">Doctoral degree</td>
-    <td class="tg-jwfa">Education</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United Kingdom</td>
-    <td class="tg-jwfa">UK02</td>
-    <td class="tg-jwfa">University of Glasgow</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Financial Forecasting &amp; Investment</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United Kingdom</td>
-    <td class="tg-jwfa">UK03</td>
-    <td class="tg-jwfa">Imperial College London</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Finance and Accounting</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United Kingdom</td>
-    <td class="tg-jwfa">UK04</td>
-    <td class="tg-jwfa">The University of Manchester</td>
-    <td class="tg-jwfa">Doctoral degree</td>
-    <td class="tg-jwfa">Education</td>
-    <td class="tg-jwfa">Currently enrolled</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United Kingdom</td>
-    <td class="tg-jwfa">UK05</td>
-    <td class="tg-jwfa">Goldsmiths, University of London</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Global Media and Transnational Communications</td>
-    <td class="tg-jwfa">Currently enrolled</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US01</td>
-    <td class="tg-jwfa">Texas A&amp;M University</td>
-    <td class="tg-jwfa">Doctoral degree</td>
-    <td class="tg-jwfa">Educational Psychology (Research, Measurement, and Statistics)</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US02</td>
-    <td class="tg-jwfa">University of Maryland, College Park</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Business and Management – Supply Chain Management</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US03</td>
-    <td class="tg-jwfa">University of Florida</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Digital arts and sciences</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US04</td>
-    <td class="tg-jwfa">Duke University</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">East Asian Studies</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US05</td>
-    <td class="tg-jwfa">Fordham University</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Accounting</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US06</td>
-    <td class="tg-jwfa">University of Denver</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">International MBA</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US07</td>
-    <td class="tg-jwfa">Northwestern University</td>
-    <td class="tg-jwfa">Dual degree (Doctorate &amp; Master’s)</td>
-    <td class="tg-jwfa">Juris Doctor &amp; MBA</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US08</td>
-    <td class="tg-jwfa">University of Texas at Dallas</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Finance</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US09</td>
-    <td class="tg-jwfa">Washington University in St. Louis</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Accounting</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US10</td>
-    <td class="tg-jwfa">University of Michigan</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Accounting</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US11</td>
-    <td class="tg-jwfa">Fordham University</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Business Analytics</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US12</td>
-    <td class="tg-jwfa">Purdue University</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Health Communication</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US13</td>
-    <td class="tg-jwfa">University of Washington</td>
-    <td class="tg-jwfa">Doctoral degree</td>
-    <td class="tg-jwfa">Area Studies</td>
-    <td class="tg-jwfa">Currently enrolled</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US14</td>
-    <td class="tg-jwfa">Boston University</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Mental Health Counseling</td>
-    <td class="tg-jwfa">Currently enrolled</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US15</td>
-    <td class="tg-jwfa">University of Illinois at Urbana-Champaign</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Financial Engineering</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US16</td>
-    <td class="tg-jwfa">University of Connecticut</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Financial Risk Management</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US17</td>
-    <td class="tg-jwfa">University of California, Davis</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Communication</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US18</td>
-    <td class="tg-jwfa">University of Rochester</td>
-    <td class="tg-jwfa">Doctoral degree</td>
-    <td class="tg-jwfa">Mechanical Engineering</td>
-    <td class="tg-jwfa">Currently enrolled</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US19</td>
-    <td class="tg-jwfa">Columbia University</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">TESOL (Teaching English to Students of Other Languages)</td>
-    <td class="tg-jwfa">Graduated</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US20</td>
-    <td class="tg-jwfa">University of Southern California</td>
-    <td class="tg-jwfa">Doctoral degree</td>
-    <td class="tg-jwfa">Communication</td>
-    <td class="tg-jwfa">Currently enrolled</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US21</td>
-    <td class="tg-jwfa">Stetson University</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">MBA</td>
-    <td class="tg-jwfa">Currently enrolled</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US22</td>
-    <td class="tg-jwfa">Cornell University</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Public Administration</td>
-    <td class="tg-jwfa">Currently enrolled</td>
-  </tr>
-  <tr>
-    <td class="tg-jwfa">United States</td>
-    <td class="tg-jwfa">US23</td>
-    <td class="tg-jwfa">University of Michigan</td>
-    <td class="tg-jwfa">Master’s degree</td>
-    <td class="tg-jwfa">Information</td>
-    <td class="tg-jwfa">Currently enrolled</td>
-  </tr>
 </table>
 
-<!--This is the end of Further Study information Table-->
-              <p></p>     
-<!--This is the beginning of Employment information table-->    
-              
-<table class="tg-career" id="myTable2">
-  <tr>
-    <th class="tg-4jr3" onclick="sortTable2(0)">Employment Location <br>(By Alphabetical Order of Region)<br></th>
-    <th class="tg-4jr3" onclick="sortTable2(1)">Alumni Number</th>
-    <th class="tg-4jr3" onclick="sortTable2(2)">Employing Organization</th>
-    <th class="tg-4jr3" onclick="sortTable2(3)">Industry Sector</th>
-    <th class="tg-4jr3" onclick="sortTable2(4)">Job Nature</th>
-    <th class="tg-4jr3" onclick="sortTable2(5)">Position</th>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Melbourne, Australia</td>
-    <td class="tg-0lax">AU01-ME</td>
-    <td class="tg-0lax">City Holdings Pty Ltd</td>
-    <td class="tg-0lax">Information Technology, Facility Management</td>
-    <td class="tg-0lax">Data/ Business Analysis</td>
-    <td class="tg-0lax">Business Intelligence Analyst</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Calgary, Canada</td>
-    <td class="tg-0lax">CA01-CA</td>
-    <td class="tg-0lax">Mercer</td>
-    <td class="tg-0lax">Consulting Services</td>
-    <td class="tg-0lax">Insurance Service</td>
-    <td class="tg-0lax">Analyst</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Beijing, China</td>
-    <td class="tg-0lax">CN01-BJ</td>
-    <td class="tg-0lax">The People’s Bank of China</td>
-    <td class="tg-0lax">Banking and Finance</td>
-    <td class="tg-0lax">Note Printing</td>
-    <td class="tg-0lax">/</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Beijing, China</td>
-    <td class="tg-0lax">CN10-BJ</td>
-    <td class="tg-0lax">PwC</td>
-    <td class="tg-0lax">Accounting and Auditing</td>
-    <td class="tg-0lax">Marketing and Sales</td>
-    <td class="tg-0lax">Senior Marketing Officer</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Beijing, China</td>
-    <td class="tg-0lax">CN11-BJ</td>
-    <td class="tg-0lax">Microsoft China</td>
-    <td class="tg-0lax">Information Technology</td>
-    <td class="tg-0lax">Marketing and Sales</td>
-    <td class="tg-0lax">Product Marketing Manager</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Beijing, China</td>
-    <td class="tg-0lax">CN12-BJ</td>
-    <td class="tg-0lax">China Galazy Securities Co., Ltd.</td>
-    <td class="tg-0lax">Finance</td>
-    <td class="tg-0lax">Finance and Investment</td>
-    <td class="tg-0lax">Senior Manager</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Beijing, China</td>
-    <td class="tg-0lax">CN16-BJ</td>
-    <td class="tg-0lax">British Council</td>
-    <td class="tg-0lax">Education</td>
-    <td class="tg-0lax">Administration</td>
-    <td class="tg-0lax">Exams Service Officer</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Beijing, China</td>
-    <td class="tg-0lax">CN19-BJ</td>
-    <td class="tg-0lax">Xicheng District People's Procuratorate of Beijing Municipality</td>
-    <td class="tg-0lax">Government</td>
-    <td class="tg-0lax">Legal Service</td>
-    <td class="tg-0lax">Procurator</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Beijing, China</td>
-    <td class="tg-0lax">CN29-BJ</td>
-    <td class="tg-0lax">China Women's University</td>
-    <td class="tg-0lax">Education</td>
-    <td class="tg-0lax">Teaching and Training</td>
-    <td class="tg-0lax">Lecturer in Pre-Primary Education</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Guangzhou, China</td>
-    <td class="tg-0lax">CN18-GZ</td>
-    <td class="tg-0lax">HSBC GSC China</td>
-    <td class="tg-0lax">Banking and Finance</td>
-    <td class="tg-0lax">Fund Accounting</td>
-    <td class="tg-0lax">Management Trainee</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Guangzhou, China</td>
-    <td class="tg-0lax">CN28-GZ</td>
-    <td class="tg-0lax">Guangdong University of Foreign Studies South China Business College</td>
-    <td class="tg-0lax">Education</td>
-    <td class="tg-0lax">Teaching and Training</td>
-    <td class="tg-0lax">Lecturer in Portuguese</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Guangzhou, China</td>
-    <td class="tg-0lax">CN30-GZ</td>
-    <td class="tg-0lax">International Flavors &amp; Fragrances</td>
-    <td class="tg-0lax">Research and Development</td>
-    <td class="tg-0lax">Engineering</td>
-    <td class="tg-0lax">Management Trainee</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Hangzhou, China</td>
-    <td class="tg-0lax">CN02-HZ</td>
-    <td class="tg-0lax">Dentwiton</td>
-    <td class="tg-0lax">Trading / Wholesale / Retail</td>
-    <td class="tg-0lax">Marketing and Sales</td>
-    <td class="tg-0lax">Account Manager</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Hangzhou, China</td>
-    <td class="tg-0lax">CN22-HZ</td>
-    <td class="tg-0lax">Alibaba Group</td>
-    <td class="tg-0lax">Information Technology</td>
-    <td class="tg-0lax">Engineering</td>
-    <td class="tg-0lax">Senior Algorithm Engineer</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Harbin, China</td>
-    <td class="tg-0lax">CN13-HB</td>
-    <td class="tg-0lax">Harbin Normal University</td>
-    <td class="tg-0lax">Education</td>
-    <td class="tg-0lax">Teaching and Training</td>
-    <td class="tg-0lax">Portuguese Teacher</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Hefie, China</td>
-    <td class="tg-0lax">CN03-HF</td>
-    <td class="tg-0lax">Wanda Group</td>
-    <td class="tg-0lax">Commercial, Culture, Internet, Finance</td>
-    <td class="tg-0lax">Marketing and Sales, Human Resource</td>
-    <td class="tg-0lax">Management Trainee</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Shanghai, China</td>
-    <td class="tg-0lax">CN04-SH</td>
-    <td class="tg-0lax">Kunshan Rural Commercial Bank</td>
-    <td class="tg-0lax">Banking and Finance</td>
-    <td class="tg-0lax">Administration</td>
-    <td class="tg-0lax">Vice President in internet Banking</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Shanghai, China</td>
-    <td class="tg-0lax">CN05-SH</td>
-    <td class="tg-0lax">Yi Cheong Resouce Investment Company Ltd</td>
-    <td class="tg-0lax">Trading</td>
-    <td class="tg-0lax">Marketing and Sales</td>
-    <td class="tg-0lax">Director of Board &amp; CEO</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Shanghai, China</td>
-    <td class="tg-0lax">CN06-SH</td>
-    <td class="tg-0lax">Harmonia Capital</td>
-    <td class="tg-0lax">Finance</td>
-    <td class="tg-0lax">Finance and Investment</td>
-    <td class="tg-0lax">Senior Investment Manager</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Shanghai, China</td>
-    <td class="tg-0lax">CN07-SH</td>
-    <td class="tg-0lax">Andover Center Shanghai</td>
-    <td class="tg-0lax">Education</td>
-    <td class="tg-0lax">Teaching and Training</td>
-    <td class="tg-0lax">TOEFL Lecturer</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Shanghai, China</td>
-    <td class="tg-0lax">CN14-SH</td>
-    <td class="tg-0lax">Shanghai-FANUC Robotics Co.LTD.</td>
-    <td class="tg-0lax">Engineering</td>
-    <td class="tg-0lax">Engineering</td>
-    <td class="tg-0lax">R &amp; D Engineer</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Shanghai, China</td>
-    <td class="tg-0lax">CN17-SH</td>
-    <td class="tg-0lax">Zensun (Shanghai) Sci. &amp; Tech. LTD. Co.</td>
-    <td class="tg-0lax">Medical Health</td>
-    <td class="tg-0lax">Business Development</td>
-    <td class="tg-0lax">Vice President</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Shanghai, China</td>
-    <td class="tg-0lax">CN20-SH</td>
-    <td class="tg-0lax">BASF Asia Pacific</td>
-    <td class="tg-0lax">Chemical</td>
-    <td class="tg-0lax">Marketing and Sales</td>
-    <td class="tg-0lax">Sales Marketing Associate</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Shanghai, China</td>
-    <td class="tg-0lax">CN24-SH</td>
-    <td class="tg-0lax">Beijing Perfect World Network Technology Co., Ltd</td>
-    <td class="tg-0lax">Information Technology</td>
-    <td class="tg-0lax">Art / Design</td>
-    <td class="tg-0lax">Game Designer</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Shanghai, China</td>
-    <td class="tg-0lax">CN27-SH</td>
-    <td class="tg-0lax">Wanda Internet Technology Group</td>
-    <td class="tg-0lax">Banking and Finance</td>
-    <td class="tg-0lax">Finance Services</td>
-    <td class="tg-0lax">Compliance Specialist</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Shenzhen, China</td>
-    <td class="tg-0lax">CN08-SZ</td>
-    <td class="tg-0lax">Shenzhen Guangming New District Public Service Bureau</td>
-    <td class="tg-0lax">Government</td>
-    <td class="tg-0lax">Administration</td>
-    <td class="tg-0lax">Administrative Staff</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Shenzhen, China</td>
-    <td class="tg-0lax">CN32-SZ</td>
-    <td class="tg-0lax">Huawei Technologies Co., Ltd</td>
-    <td class="tg-0lax">Telecommunications</td>
-    <td class="tg-0lax">Financial Management</td>
-    <td class="tg-0lax">Financial Management</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Zhuhai, China</td>
-    <td class="tg-0lax">CN09-ZH</td>
-    <td class="tg-0lax">Dacheng Law Offices (Zhuhai Branch)</td>
-    <td class="tg-0lax">Law Firm and Legal Consultation</td>
-    <td class="tg-0lax">Legal Service</td>
-    <td class="tg-0lax">Lawyer</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Zhuhai, China</td>
-    <td class="tg-0lax">CN15-ZH</td>
-    <td class="tg-0lax">Zhuhai Livzon Cynvenio Diagnostics Ltd.</td>
-    <td class="tg-0lax">Medical Health</td>
-    <td class="tg-0lax">Scientific Research</td>
-    <td class="tg-0lax">Medical Specialist</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Zhuhai, China</td>
-    <td class="tg-0lax">CN21-ZH</td>
-    <td class="tg-0lax">Beijing Normal University, Zhuhai</td>
-    <td class="tg-0lax">Education</td>
-    <td class="tg-0lax">Teaching and Training</td>
-    <td class="tg-0lax">Lecturer of School of Government and Law</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Hong Kong SAR</td>
-    <td class="tg-0lax">HK01-HK</td>
-    <td class="tg-0lax">Hult International Business School – Asia Enrollment Office</td>
-    <td class="tg-0lax">Education</td>
-    <td class="tg-0lax">Education Consulting</td>
-    <td class="tg-0lax">Associate Director of Enrollment</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Hong Kong SAR</td>
-    <td class="tg-0lax">HK02-HK</td>
-    <td class="tg-0lax">BNP Paribas</td>
-    <td class="tg-0lax">Banking and Finance</td>
-    <td class="tg-0lax">Research and Accounting</td>
-    <td class="tg-0lax">Credit Analyst</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Hong Kong SAR</td>
-    <td class="tg-0lax">HK03-HK</td>
-    <td class="tg-0lax">Novartis Pharmaceuticals (HK) Ltd</td>
-    <td class="tg-0lax">Medical Health</td>
-    <td class="tg-0lax">Marketing and Sales</td>
-    <td class="tg-0lax">Senior Sales Executive</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Saudi Arabia</td>
-    <td class="tg-0lax">SA01-SA</td>
-    <td class="tg-0lax">King Fahd University of Petroleum and Minerals (KFUPM)</td>
-    <td class="tg-0lax">Education</td>
-    <td class="tg-0lax">Teaching and Training</td>
-    <td class="tg-0lax">Assistant Professor in International Relations and Geopolitics</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Singapore</td>
-    <td class="tg-0lax">SG01-SG</td>
-    <td class="tg-0lax">National University of Singapore</td>
-    <td class="tg-0lax">Education</td>
-    <td class="tg-0lax">Scientific Research</td>
-    <td class="tg-0lax">Postdoctoral Fellow of Department of Biomedical Engineering</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Florida, United States</td>
-    <td class="tg-0lax">US05-FL</td>
-    <td class="tg-0lax">Stetson University</td>
-    <td class="tg-0lax">Education</td>
-    <td class="tg-0lax">Teaching and Training</td>
-    <td class="tg-0lax">Instructor of Chinese</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">New York City, United States</td>
-    <td class="tg-0lax">US02-NY</td>
-    <td class="tg-0lax">EY</td>
-    <td class="tg-0lax">Accounting and Auditing</td>
-    <td class="tg-0lax">Audit</td>
-    <td class="tg-0lax">Senior Auditor</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">New York City, United States</td>
-    <td class="tg-0lax">US04-NY</td>
-    <td class="tg-0lax">Secoo Inc.</td>
-    <td class="tg-0lax">Luxury Retail/ E-commerce</td>
-    <td class="tg-0lax">Market Research/ Business Analysis/  Data Mining</td>
-    <td class="tg-0lax">Data Analyst</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Pennsylvania, United States</td>
-    <td class="tg-0lax">US03-PA</td>
-    <td class="tg-0lax">Allegheny College</td>
-    <td class="tg-0lax">Education</td>
-    <td class="tg-0lax">Teaching and Training</td>
-    <td class="tg-0lax">Instructor of Chinese</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Texas, United States</td>
-    <td class="tg-0lax">US01-TX</td>
-    <td class="tg-0lax">Seneca Investments</td>
-    <td class="tg-0lax">Real Estate</td>
-    <td class="tg-0lax">Investing/ Research</td>
-    <td class="tg-0lax">Financial Analyst</td>
-  </tr>
+<br>
+
+
+
+<p>Below please find the information of alumni  who have joined the Alumni Online:</p>
+
+<br>
+
+<!--This is start of the further study table-->
+<table id="study" class="table table-hover table-bordered">
+    <thead>
+    <tr>
+        <th class="tg-wlzb" >Further Study Location <br>(By Alphabetical Order of Region)</th>
+        <th class="tg-wlzb" >Alumni Number</th>
+        <th class="tg-wlzb" >Name of University</th>
+        <th class="tg-wlzb" >Degree Programme</th>
+        <th class="tg-wlzb" >Major of Study</th>
+        <th class="tg-wlzb" >Status of Graduate Study</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="tg-jwfa">Australia</td>
+        <td class="tg-jwfa">AU01</td>
+        <td class="tg-jwfa">The University of Melbourne</td>
+        <td class="tg-jwfa">Doctoral degree</td>
+        <td class="tg-jwfa">Computing and Information Systems</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Australia</td>
+        <td class="tg-jwfa">AU02</td>
+        <td class="tg-jwfa">The Australian National University</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">International Relations</td>
+        <td class="tg-jwfa">Currently enrolled</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Australia</td>
+        <td class="tg-jwfa">AU03</td>
+        <td class="tg-jwfa">The University of Melbourne</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Information System</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Australia</td>
+        <td class="tg-jwfa">AU04</td>
+        <td class="tg-jwfa">Monash University</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Finance</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Australia</td>
+        <td class="tg-jwfa">AU05</td>
+        <td class="tg-jwfa">The University of Melbourne</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Speech Pathology</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Australia</td>
+        <td class="tg-jwfa">AU06</td>
+        <td class="tg-jwfa">The University of Sydney</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Commerce (Finance and Banking)</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Canada</td>
+        <td class="tg-jwfa">CA01</td>
+        <td class="tg-jwfa">McGill University</td>
+        <td class="tg-jwfa">Doctoral degree</td>
+        <td class="tg-jwfa">Computer Science</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Germany</td>
+        <td class="tg-jwfa">DE01</td>
+        <td class="tg-jwfa">Universität Hamburg</td>
+        <td class="tg-jwfa">Doctoral degree</td>
+        <td class="tg-jwfa">Law and Economics</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Hong Kong SAR</td>
+        <td class="tg-jwfa">HK01</td>
+        <td class="tg-jwfa">City University of Hong Kong</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Integrated Marketing Communications</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Hong Kong SAR</td>
+        <td class="tg-jwfa">HK02</td>
+        <td class="tg-jwfa">University of Hong Kong</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Architectural Conservation</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Hong Kong SAR</td>
+        <td class="tg-jwfa">HK03</td>
+        <td class="tg-jwfa">University of Hong Kong</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Statistics</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Hong Kong SAR</td>
+        <td class="tg-jwfa">HK04</td>
+        <td class="tg-jwfa">The Chinese University of Hong Kong</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Finance</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Hong Kong SAR</td>
+        <td class="tg-jwfa">HK05</td>
+        <td class="tg-jwfa">Lingnan University</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Human Resource Management</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Hong Kong SAR</td>
+        <td class="tg-jwfa">HK06</td>
+        <td class="tg-jwfa">The Hong Kong University of Science and Technology</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Humanities</td>
+        <td class="tg-jwfa">Currently enrolled</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Hong Kong SAR</td>
+        <td class="tg-jwfa">HK07</td>
+        <td class="tg-jwfa">The Chinese University of Hong Kong</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">English Literature</td>
+        <td class="tg-jwfa">Currently enrolled</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Hong Kong SAR</td>
+        <td class="tg-jwfa">HK08</td>
+        <td class="tg-jwfa">The Chinese University of Hong Kong</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Social Work</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Korea</td>
+        <td class="tg-jwfa">KR01</td>
+        <td class="tg-jwfa">Korea University</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Comparative Studies of Chinese and Japanese Culture</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Mainland China</td>
+        <td class="tg-jwfa">CN01</td>
+        <td class="tg-jwfa">Renmin (People's) University of China</td>
+        <td class="tg-jwfa">Doctoral degree</td>
+        <td class="tg-jwfa">Public Finance</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Singapore</td>
+        <td class="tg-jwfa">SG01</td>
+        <td class="tg-jwfa">National University of Singapore</td>
+        <td class="tg-jwfa">Doctoral degree</td>
+        <td class="tg-jwfa">Public Policy</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Singapore</td>
+        <td class="tg-jwfa">SG02</td>
+        <td class="tg-jwfa">Nanyang Technological University</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Knowledge Management</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Singapore</td>
+        <td class="tg-jwfa">SG03</td>
+        <td class="tg-jwfa">Nanyang Technological University</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Financial Engineering</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Singapore</td>
+        <td class="tg-jwfa">SG04</td>
+        <td class="tg-jwfa">Nanyang Technological University</td>
+        <td class="tg-jwfa">Doctoral degree</td>
+        <td class="tg-jwfa">Literature</td>
+        <td class="tg-jwfa">Currently enrolled</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Singapore</td>
+        <td class="tg-jwfa">SG05</td>
+        <td class="tg-jwfa">Nanyang Technological University</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Finance</td>
+        <td class="tg-jwfa">Currently enrolled</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">Spain</td>
+        <td class="tg-jwfa">ES01</td>
+        <td class="tg-jwfa">IE Business School</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">International MBA </td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United Kingdom</td>
+        <td class="tg-jwfa">UK01</td>
+        <td class="tg-jwfa">University of Cambridge</td>
+        <td class="tg-jwfa">Doctoral degree</td>
+        <td class="tg-jwfa">Education</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United Kingdom</td>
+        <td class="tg-jwfa">UK02</td>
+        <td class="tg-jwfa">University of Glasgow</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Financial Forecasting &amp; Investment</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United Kingdom</td>
+        <td class="tg-jwfa">UK03</td>
+        <td class="tg-jwfa">Imperial College London</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Finance and Accounting</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United Kingdom</td>
+        <td class="tg-jwfa">UK04</td>
+        <td class="tg-jwfa">The University of Manchester</td>
+        <td class="tg-jwfa">Doctoral degree</td>
+        <td class="tg-jwfa">Education</td>
+        <td class="tg-jwfa">Currently enrolled</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United Kingdom</td>
+        <td class="tg-jwfa">UK05</td>
+        <td class="tg-jwfa">Goldsmiths, University of London</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Global Media and Transnational Communications</td>
+        <td class="tg-jwfa">Currently enrolled</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US01</td>
+        <td class="tg-jwfa">Texas A&amp;M University</td>
+        <td class="tg-jwfa">Doctoral degree</td>
+        <td class="tg-jwfa">Educational Psychology (Research, Measurement, and Statistics)</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US02</td>
+        <td class="tg-jwfa">University of Maryland, College Park</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Business and Management – Supply Chain Management</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US03</td>
+        <td class="tg-jwfa">University of Florida</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Digital arts and sciences</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US04</td>
+        <td class="tg-jwfa">Duke University</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">East Asian Studies</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US05</td>
+        <td class="tg-jwfa">Fordham University</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Accounting</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US06</td>
+        <td class="tg-jwfa">University of Denver</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">International MBA</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US07</td>
+        <td class="tg-jwfa">Northwestern University</td>
+        <td class="tg-jwfa">Dual degree (Doctorate &amp; Master’s)</td>
+        <td class="tg-jwfa">Juris Doctor &amp; MBA</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US08</td>
+        <td class="tg-jwfa">University of Texas at Dallas</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Finance</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US09</td>
+        <td class="tg-jwfa">Washington University in St. Louis</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Accounting</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US10</td>
+        <td class="tg-jwfa">University of Michigan</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Accounting</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US11</td>
+        <td class="tg-jwfa">Fordham University</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Business Analytics</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US12</td>
+        <td class="tg-jwfa">Purdue University</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Health Communication</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US13</td>
+        <td class="tg-jwfa">University of Washington</td>
+        <td class="tg-jwfa">Doctoral degree</td>
+        <td class="tg-jwfa">Area Studies</td>
+        <td class="tg-jwfa">Currently enrolled</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US14</td>
+        <td class="tg-jwfa">Boston University</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Mental Health Counseling</td>
+        <td class="tg-jwfa">Currently enrolled</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US15</td>
+        <td class="tg-jwfa">University of Illinois at Urbana-Champaign</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Financial Engineering</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US16</td>
+        <td class="tg-jwfa">University of Connecticut</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Financial Risk Management</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US17</td>
+        <td class="tg-jwfa">University of California, Davis</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Communication</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US18</td>
+        <td class="tg-jwfa">University of Rochester</td>
+        <td class="tg-jwfa">Doctoral degree</td>
+        <td class="tg-jwfa">Mechanical Engineering</td>
+        <td class="tg-jwfa">Currently enrolled</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US19</td>
+        <td class="tg-jwfa">Columbia University</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">TESOL (Teaching English to Students of Other Languages)</td>
+        <td class="tg-jwfa">Graduated</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US20</td>
+        <td class="tg-jwfa">University of Southern California</td>
+        <td class="tg-jwfa">Doctoral degree</td>
+        <td class="tg-jwfa">Communication</td>
+        <td class="tg-jwfa">Currently enrolled</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US21</td>
+        <td class="tg-jwfa">Stetson University</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">MBA</td>
+        <td class="tg-jwfa">Currently enrolled</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US22</td>
+        <td class="tg-jwfa">Cornell University</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Public Administration</td>
+        <td class="tg-jwfa">Currently enrolled</td>
+    </tr>
+    <tr>
+        <td class="tg-jwfa">United States</td>
+        <td class="tg-jwfa">US23</td>
+        <td class="tg-jwfa">University of Michigan</td>
+        <td class="tg-jwfa">Master’s degree</td>
+        <td class="tg-jwfa">Information</td>
+        <td class="tg-jwfa">Currently enrolled</td>
+    </tr>
+    </tbody>
+</table>
+<!--This is end of the further study table-->
+
+<br>
+<br>
+
+<!--This is start of the career  table-->
+<table id="career" class="table table-hover table-bordered">
+    <thead>
+    <tr>
+        <th class="tg-4jr3" >Employment Location <br>(By Alphabetical Order of Region)<br></th>
+        <th class="tg-4jr3" >Alumni Number</th>
+        <th class="tg-4jr3" >Employing Organization</th>
+        <th class="tg-4jr3" >Industry Sector</th>
+        <th class="tg-4jr3" >Job Nature</th>
+        <th class="tg-4jr3" >Position</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td class="tg-0lax">Melbourne, Australia</td>
+        <td class="tg-0lax">AU01-ME</td>
+        <td class="tg-0lax">City Holdings Pty Ltd</td>
+        <td class="tg-0lax">Information Technology, Facility Management</td>
+        <td class="tg-0lax">Data/ Business Analysis</td>
+        <td class="tg-0lax">Business Intelligence Analyst</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Calgary, Canada</td>
+        <td class="tg-0lax">CA01-CA</td>
+        <td class="tg-0lax">Mercer</td>
+        <td class="tg-0lax">Consulting Services</td>
+        <td class="tg-0lax">Insurance Service</td>
+        <td class="tg-0lax">Analyst</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Beijing, China</td>
+        <td class="tg-0lax">CN01-BJ</td>
+        <td class="tg-0lax">The People’s Bank of China</td>
+        <td class="tg-0lax">Banking and Finance</td>
+        <td class="tg-0lax">Note Printing</td>
+        <td class="tg-0lax">/</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Beijing, China</td>
+        <td class="tg-0lax">CN10-BJ</td>
+        <td class="tg-0lax">PwC</td>
+        <td class="tg-0lax">Accounting and Auditing</td>
+        <td class="tg-0lax">Marketing and Sales</td>
+        <td class="tg-0lax">Senior Marketing Officer</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Beijing, China</td>
+        <td class="tg-0lax">CN11-BJ</td>
+        <td class="tg-0lax">Microsoft China</td>
+        <td class="tg-0lax">Information Technology</td>
+        <td class="tg-0lax">Marketing and Sales</td>
+        <td class="tg-0lax">Product Marketing Manager</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Beijing, China</td>
+        <td class="tg-0lax">CN12-BJ</td>
+        <td class="tg-0lax">China Galazy Securities Co., Ltd.</td>
+        <td class="tg-0lax">Finance</td>
+        <td class="tg-0lax">Finance and Investment</td>
+        <td class="tg-0lax">Senior Manager</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Beijing, China</td>
+        <td class="tg-0lax">CN16-BJ</td>
+        <td class="tg-0lax">British Council</td>
+        <td class="tg-0lax">Education</td>
+        <td class="tg-0lax">Administration</td>
+        <td class="tg-0lax">Exams Service Officer</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Beijing, China</td>
+        <td class="tg-0lax">CN19-BJ</td>
+        <td class="tg-0lax">Xicheng District People's Procuratorate of Beijing Municipality</td>
+        <td class="tg-0lax">Government</td>
+        <td class="tg-0lax">Legal Service</td>
+        <td class="tg-0lax">Procurator</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Beijing, China</td>
+        <td class="tg-0lax">CN29-BJ</td>
+        <td class="tg-0lax">China Women's University</td>
+        <td class="tg-0lax">Education</td>
+        <td class="tg-0lax">Teaching and Training</td>
+        <td class="tg-0lax">Lecturer in Pre-Primary Education</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Guangzhou, China</td>
+        <td class="tg-0lax">CN18-GZ</td>
+        <td class="tg-0lax">HSBC GSC China</td>
+        <td class="tg-0lax">Banking and Finance</td>
+        <td class="tg-0lax">Fund Accounting</td>
+        <td class="tg-0lax">Management Trainee</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Guangzhou, China</td>
+        <td class="tg-0lax">CN28-GZ</td>
+        <td class="tg-0lax">Guangdong University of Foreign Studies South China Business College</td>
+        <td class="tg-0lax">Education</td>
+        <td class="tg-0lax">Teaching and Training</td>
+        <td class="tg-0lax">Lecturer in Portuguese</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Guangzhou, China</td>
+        <td class="tg-0lax">CN30-GZ</td>
+        <td class="tg-0lax">International Flavors &amp; Fragrances</td>
+        <td class="tg-0lax">Research and Development</td>
+        <td class="tg-0lax">Engineering</td>
+        <td class="tg-0lax">Management Trainee</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Hangzhou, China</td>
+        <td class="tg-0lax">CN02-HZ</td>
+        <td class="tg-0lax">Dentwiton</td>
+        <td class="tg-0lax">Trading / Wholesale / Retail</td>
+        <td class="tg-0lax">Marketing and Sales</td>
+        <td class="tg-0lax">Account Manager</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Hangzhou, China</td>
+        <td class="tg-0lax">CN22-HZ</td>
+        <td class="tg-0lax">Alibaba Group</td>
+        <td class="tg-0lax">Information Technology</td>
+        <td class="tg-0lax">Engineering</td>
+        <td class="tg-0lax">Senior Algorithm Engineer</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Harbin, China</td>
+        <td class="tg-0lax">CN13-HB</td>
+        <td class="tg-0lax">Harbin Normal University</td>
+        <td class="tg-0lax">Education</td>
+        <td class="tg-0lax">Teaching and Training</td>
+        <td class="tg-0lax">Portuguese Teacher</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Hefie, China</td>
+        <td class="tg-0lax">CN03-HF</td>
+        <td class="tg-0lax">Wanda Group</td>
+        <td class="tg-0lax">Commercial, Culture, Internet, Finance</td>
+        <td class="tg-0lax">Marketing and Sales, Human Resource</td>
+        <td class="tg-0lax">Management Trainee</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Shanghai, China</td>
+        <td class="tg-0lax">CN04-SH</td>
+        <td class="tg-0lax">Kunshan Rural Commercial Bank</td>
+        <td class="tg-0lax">Banking and Finance</td>
+        <td class="tg-0lax">Administration</td>
+        <td class="tg-0lax">Vice President in internet Banking</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Shanghai, China</td>
+        <td class="tg-0lax">CN05-SH</td>
+        <td class="tg-0lax">Yi Cheong Resouce Investment Company Ltd</td>
+        <td class="tg-0lax">Trading</td>
+        <td class="tg-0lax">Marketing and Sales</td>
+        <td class="tg-0lax">Director of Board &amp; CEO</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Shanghai, China</td>
+        <td class="tg-0lax">CN06-SH</td>
+        <td class="tg-0lax">Harmonia Capital</td>
+        <td class="tg-0lax">Finance</td>
+        <td class="tg-0lax">Finance and Investment</td>
+        <td class="tg-0lax">Senior Investment Manager</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Shanghai, China</td>
+        <td class="tg-0lax">CN07-SH</td>
+        <td class="tg-0lax">Andover Center Shanghai</td>
+        <td class="tg-0lax">Education</td>
+        <td class="tg-0lax">Teaching and Training</td>
+        <td class="tg-0lax">TOEFL Lecturer</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Shanghai, China</td>
+        <td class="tg-0lax">CN14-SH</td>
+        <td class="tg-0lax">Shanghai-FANUC Robotics Co.LTD.</td>
+        <td class="tg-0lax">Engineering</td>
+        <td class="tg-0lax">Engineering</td>
+        <td class="tg-0lax">R &amp; D Engineer</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Shanghai, China</td>
+        <td class="tg-0lax">CN17-SH</td>
+        <td class="tg-0lax">Zensun (Shanghai) Sci. &amp; Tech. LTD. Co.</td>
+        <td class="tg-0lax">Medical Health</td>
+        <td class="tg-0lax">Business Development</td>
+        <td class="tg-0lax">Vice President</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Shanghai, China</td>
+        <td class="tg-0lax">CN20-SH</td>
+        <td class="tg-0lax">BASF Asia Pacific</td>
+        <td class="tg-0lax">Chemical</td>
+        <td class="tg-0lax">Marketing and Sales</td>
+        <td class="tg-0lax">Sales Marketing Associate</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Shanghai, China</td>
+        <td class="tg-0lax">CN24-SH</td>
+        <td class="tg-0lax">Beijing Perfect World Network Technology Co., Ltd</td>
+        <td class="tg-0lax">Information Technology</td>
+        <td class="tg-0lax">Art / Design</td>
+        <td class="tg-0lax">Game Designer</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Shanghai, China</td>
+        <td class="tg-0lax">CN27-SH</td>
+        <td class="tg-0lax">Wanda Internet Technology Group</td>
+        <td class="tg-0lax">Banking and Finance</td>
+        <td class="tg-0lax">Finance Services</td>
+        <td class="tg-0lax">Compliance Specialist</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Shenzhen, China</td>
+        <td class="tg-0lax">CN08-SZ</td>
+        <td class="tg-0lax">Shenzhen Guangming New District Public Service Bureau</td>
+        <td class="tg-0lax">Government</td>
+        <td class="tg-0lax">Administration</td>
+        <td class="tg-0lax">Administrative Staff</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Shenzhen, China</td>
+        <td class="tg-0lax">CN32-SZ</td>
+        <td class="tg-0lax">Huawei Technologies Co., Ltd</td>
+        <td class="tg-0lax">Telecommunications</td>
+        <td class="tg-0lax">Financial Management</td>
+        <td class="tg-0lax">Financial Management</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Zhuhai, China</td>
+        <td class="tg-0lax">CN09-ZH</td>
+        <td class="tg-0lax">Dacheng Law Offices (Zhuhai Branch)</td>
+        <td class="tg-0lax">Law Firm and Legal Consultation</td>
+        <td class="tg-0lax">Legal Service</td>
+        <td class="tg-0lax">Lawyer</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Zhuhai, China</td>
+        <td class="tg-0lax">CN15-ZH</td>
+        <td class="tg-0lax">Zhuhai Livzon Cynvenio Diagnostics Ltd.</td>
+        <td class="tg-0lax">Medical Health</td>
+        <td class="tg-0lax">Scientific Research</td>
+        <td class="tg-0lax">Medical Specialist</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Zhuhai, China</td>
+        <td class="tg-0lax">CN21-ZH</td>
+        <td class="tg-0lax">Beijing Normal University, Zhuhai</td>
+        <td class="tg-0lax">Education</td>
+        <td class="tg-0lax">Teaching and Training</td>
+        <td class="tg-0lax">Lecturer of School of Government and Law</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Hong Kong SAR</td>
+        <td class="tg-0lax">HK01-HK</td>
+        <td class="tg-0lax">Hult International Business School – Asia Enrollment Office</td>
+        <td class="tg-0lax">Education</td>
+        <td class="tg-0lax">Education Consulting</td>
+        <td class="tg-0lax">Associate Director of Enrollment</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Hong Kong SAR</td>
+        <td class="tg-0lax">HK02-HK</td>
+        <td class="tg-0lax">BNP Paribas</td>
+        <td class="tg-0lax">Banking and Finance</td>
+        <td class="tg-0lax">Research and Accounting</td>
+        <td class="tg-0lax">Credit Analyst</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Hong Kong SAR</td>
+        <td class="tg-0lax">HK03-HK</td>
+        <td class="tg-0lax">Novartis Pharmaceuticals (HK) Ltd</td>
+        <td class="tg-0lax">Medical Health</td>
+        <td class="tg-0lax">Marketing and Sales</td>
+        <td class="tg-0lax">Senior Sales Executive</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Saudi Arabia</td>
+        <td class="tg-0lax">SA01-SA</td>
+        <td class="tg-0lax">King Fahd University of Petroleum and Minerals (KFUPM)</td>
+        <td class="tg-0lax">Education</td>
+        <td class="tg-0lax">Teaching and Training</td>
+        <td class="tg-0lax">Assistant Professor in International Relations and Geopolitics</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Singapore</td>
+        <td class="tg-0lax">SG01-SG</td>
+        <td class="tg-0lax">National University of Singapore</td>
+        <td class="tg-0lax">Education</td>
+        <td class="tg-0lax">Scientific Research</td>
+        <td class="tg-0lax">Postdoctoral Fellow of Department of Biomedical Engineering</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Florida, United States</td>
+        <td class="tg-0lax">US05-FL</td>
+        <td class="tg-0lax">Stetson University</td>
+        <td class="tg-0lax">Education</td>
+        <td class="tg-0lax">Teaching and Training</td>
+        <td class="tg-0lax">Instructor of Chinese</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">New York City, United States</td>
+        <td class="tg-0lax">US02-NY</td>
+        <td class="tg-0lax">EY</td>
+        <td class="tg-0lax">Accounting and Auditing</td>
+        <td class="tg-0lax">Audit</td>
+        <td class="tg-0lax">Senior Auditor</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">New York City, United States</td>
+        <td class="tg-0lax">US04-NY</td>
+        <td class="tg-0lax">Secoo Inc.</td>
+        <td class="tg-0lax">Luxury Retail/ E-commerce</td>
+        <td class="tg-0lax">Market Research/ Business Analysis/  Data Mining</td>
+        <td class="tg-0lax">Data Analyst</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Pennsylvania, United States</td>
+        <td class="tg-0lax">US03-PA</td>
+        <td class="tg-0lax">Allegheny College</td>
+        <td class="tg-0lax">Education</td>
+        <td class="tg-0lax">Teaching and Training</td>
+        <td class="tg-0lax">Instructor of Chinese</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">Texas, United States</td>
+        <td class="tg-0lax">US01-TX</td>
+        <td class="tg-0lax">Seneca Investments</td>
+        <td class="tg-0lax">Real Estate</td>
+        <td class="tg-0lax">Investing/ Research</td>
+        <td class="tg-0lax">Financial Analyst</td>
+    </tr>
+    </tbody>
 </table>
 
-<!--This is the end of the Employment information Table-->
-
-<p>&nbsp;</p>
+<!--This is end of the career table-->
+<br>
 
 <p>To contact the alumni, please follow the  steps below:</p>
 
-                <ul>
+<ul>
 
-                  <li>Log in to e-form system (<a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__umac.au1.qualtrics.com_jfe_form_SV-5F0dOnOgB1KQpsKMt&d=DwMGaQ&c=KXXihdR8fRNGFkKiMQzstu-8MbOxd1NuZkcSBymGmgo&r=YgiIm0LUnK7ygvdjU35cgNiLvPcpE9Zzzx9xRBZ6tEU&m=MIhxmUikicGZM0gsH8zqmI0l8CNxy30lRWMNokSBipQ&s=_U7ckLYwTQ194n3jEDVMLpN4FxOl5zNv4Cd5FmvIQBM&e=" target="_blank">https://umac.au1.qualtrics.com/jfe/form/SV_0dOnOgB1KQpsKMt</a>)</li>
+    <li>Log in to e-form system (<a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__umac.au1.qualtrics.com_jfe_form_SV-5F0dOnOgB1KQpsKMt&d=DwMGaQ&c=KXXihdR8fRNGFkKiMQzstu-8MbOxd1NuZkcSBymGmgo&r=YgiIm0LUnK7ygvdjU35cgNiLvPcpE9Zzzx9xRBZ6tEU&m=MIhxmUikicGZM0gsH8zqmI0l8CNxy30lRWMNokSBipQ&s=_U7ckLYwTQ194n3jEDVMLpN4FxOl5zNv4Cd5FmvIQBM&e=" target="_blank">https://umac.au1.qualtrics.com/jfe/form/SV_0dOnOgB1KQpsKMt</a>)</li>
 
-                  <li>Fill in the registration form of Alumni Online</li>
+    <li>Fill in the registration form of Alumni Online</li>
 
-                  <li>Our centre will help to connect  you with the appropriate alumni</li>
+    <li>Our centre will help to connect  you with the appropriate alumni</li>
 
-                </ul>
+</ul>
 
-          </div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-        </div>
-
-    </div><!--content-->
-
-
-
-    <?php
-
-    	include('../../../../../scs_bottom.php');
-
-	?>
-
-    <?php
-
-    	include('../../../../../footer_'.$lang.'.php');
-
-	?>
-
-    </div><!--wrap-->
-
-</body>
-
-<script>
-function sortTable(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("myTable");
-  switching = true;
-  //Set the sorting direction to ascending:
-  dir = "asc"; 
-  /*Make a loop that will continue until
-  no switching has been done:*/
-  while (switching) {
-    //start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /*Loop through all table rows (except the
-    first, which contains table headers):*/
-    for (i = 1; i < (rows.length - 1); i++) {
-      //start by saying there should be no switching:
-      shouldSwitch = false;
-      /*Get the two elements you want to compare,
-      one from current row and one from the next:*/
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      /*check if the two rows should switch place,
-      based on the direction, asc or desc:*/
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      /*If a switch has been marked, make the switch
-      and mark that a switch has been done:*/
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      //Each time a switch is done, increase this count by 1:
-      switchcount ++;      
-    } else {
-      /*If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again.*/
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
-
-function sortTable2(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("myTable2");
-  switching = true;
-  //Set the sorting direction to ascending:
-  dir = "asc"; 
-  /*Make a loop that will continue until
-  no switching has been done:*/
-  while (switching) {
-    //start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /*Loop through all table rows (except the
-    first, which contains table headers):*/
-    for (i = 1; i < (rows.length - 1); i++) {
-      //start by saying there should be no switching:
-      shouldSwitch = false;
-      /*Get the two elements you want to compare,
-      one from current row and one from the next:*/
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      /*check if the two rows should switch place,
-      based on the direction, asc or desc:*/
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      /*If a switch has been marked, make the switch
-      and mark that a switch has been done:*/
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      //Each time a switch is done, increase this count by 1:
-      switchcount ++;      
-    } else {
-      /*If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again.*/
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
+<script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
 </script>
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#study').DataTable();
+    } );
+
+    $(document).ready(function() {
+        $('#career').DataTable();
+    } );
+</script>
+
+</body>
 </html>
