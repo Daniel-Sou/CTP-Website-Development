@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="474px" height="284px" viewBox="0 0 474 284" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>升學方面</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Study-Board" transform="translate(-200.000000, -60.000000)">
+            <g id="升學方面" transform="translate(200.000000, 60.000000)">
+                <path d="M34.7392715,-8.7059006e-16 L439.260728,8.7059006e-16 C448.170702,-7.66145493e-16 453.763797,1.39238417 458.652686,4.00699056 C463.541574,6.62159695 467.378403,10.4584256 469.993009,15.3473144 C472.607616,20.2362033 474,25.8292982 474,34.7392715 L474,40.2607285 C474,49.1707018 472.607616,54.7637967 469.993009,59.6526856 C467.378403,64.5415744 463.541574,68.3784031 458.652686,70.9930094 C453.763797,73.6076158 448.170702,75 439.260728,75 L34.7392715,75 C25.8292982,75 20.2362033,73.6076158 15.3473144,70.9930094 C10.4584256,68.3784031 6.62159695,64.5415744 4.00699056,59.6526856 C1.39238417,54.7637967 5.10763662e-16,49.1707018 -5.80393373e-16,40.2607285 L7.68582073e-15,34.7392715 C6.5946637e-15,25.8292982 1.39238417,20.2362033 4.00699056,15.3473144 C6.62159695,10.4584256 10.4584256,6.62159695 15.3473144,4.00699056 C20.2362033,1.39238417 25.8292982,7.66145493e-16 34.7392715,-8.7059006e-16 Z" id="Career" fill="#66CCCC"></path>
+                <text id="--研究生院及專業的選擇---升學準備" font-family="PingFangSC-Regular, PingFang SC" font-size="25" font-weight="normal" fill="#000000">
+                    <tspan x="40" y="112">	- 研究生院及專業的選擇</tspan>
+                    <tspan x="40" y="148">	- 升學準備</tspan>
+                    <tspan x="40" y="184">	- 支付學費</tspan>
+                    <tspan x="40" y="220">	- 校園生活及國際生支援服務</tspan>
+                </text>
+                <text font-family="PingFangSC-Regular, PingFang SC" font-size="25" font-weight="normal" fill="#000000">
+                    <tspan x="55" y="38">升學方面</tspan>
+                </text>
+                <g id="path" transform="translate(20.000000, 33.000000)" stroke="#66CCCC" stroke-width="5">
+                    <path d="M0,147 C0,219.275229 38.3333333,252.760542 115,247.455938" id="Path-2"></path>
+                    <path d="M89.5236593,247.5 L419.952681,247.5" id="Line" stroke-linecap="square"></path>
+                    <path d="M420,1 L420,247.5" id="Line" stroke-linecap="square"></path>
+                    <path d="M0.5,3 L0.5,167" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
